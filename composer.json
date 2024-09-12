@@ -1,6 +1,34 @@
 {
+  "name": "mon/projet",
+  "description": "Un projet PHP avec envoi d'e-mails et autres dépendances",
   "require": {
-    "php": "^7.4 || ^8.0",
-    "phpmailer/phpmailer": "^6.5"
-  }
+      "php": "^7.4 || ^8.0",
+      "phpmailer/phpmailer": "^6.8",
+      "guzzlehttp/guzzle": "^7.4"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "^9.5",
+      "squizlabs/php_codesniffer": "^3.6"
+  },
+  "autoload": {
+      "psr-4": {
+          "MonProjet\\": "src/"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "MonProjet\\Tests\\": "tests/"
+      }
+  },
+  "scripts": {
+      "post-install-cmd": [
+          "Illuminate\\Foundation\\ComposerScripts::postInstall"
+      ],
+      "post-update-cmd": [
+          "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+      ]
+  },
+  "minimum-stability": "stable"
 }
+
+  
