@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.page1{
+  background-image: url('R.jpeg'); /* Remplace par l'image de fond souhaitée */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  position: relative;
+  animation: animateBackground 15s infinite alternate;
+}
+.page3 {
+  background-image: url('a.jpeg'); /* Remplace par l'image de fond souhaitée */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  position: relative;
+  animation: animateBackground 15s infinite alternate;
+}
+@keyframes animateBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+.content-center {
+  display: flex;
+    flex-direction: column; /* Arrange les éléments verticalement */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.half-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.half-image button {
+  padding: 15px 30px;
+  background-color: rgba(100, 149, 237, 0.8); 
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.half-image button:hover {
+  background-color: rgba(100, 149, 237, 1);
+}
+
+
+.image1 {
+  background-image: url('banner_330_512.webp'); /* Image de gauche */
+}
+
+.image2 {
+  background-image: url('banner_330_512\ \(2\).webp'); /* Image de droite */
+}
+
+h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+p {
+  color: #fff;
+  font-size: 1.2em;
+}
+.gif-banner {
+  width: 728px; /* Largeur du GIF */
+  max-width: 100%; /* S'adapte aux petits écrans */
+  margin-bottom: 500px; /* Espace entre le GIF et le bouton */
+  
+}
+.p{
+  padding-bottom: 20px;
+}
